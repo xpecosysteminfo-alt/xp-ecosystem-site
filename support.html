@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Center - XP Ecosystem</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #050505;
+        }
+
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Watery Background Effect */
+        .water-bg {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 80% 20%, rgba(147, 51, 234, 0.05) 0%, transparent 30%);
+            animation: water-flow 15s ease-in-out infinite alternate;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body class="text-gray-100 overflow-x-hidden selection:bg-white/20 selection:text-white">
+
+    <div class="fixed inset-0 z-0 pointer-events-none">
+        <div class="water-bg"></div>
+    </div>
+
+    <!-- Nav -->
+    <header
+        class="fixed w-full top-0 z-50 transition-all duration-300 glass-panel border-b-0 border-b-white/5 bg-black/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/index.html" class="flex items-center gap-3 group">
+                <div
+                    class="w-10 h-10 rounded-xl bg-gradient-to-br from-white/10 to-white/5 flex items-center justify-center border border-white/10 group-hover:border-white/30 transition shadow-[0_0_15px_rgba(255,255,255,0.05)]">
+                    <span class="font-bold text-lg text-white">XP</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-wide text-white leading-none">XP ECOSYSTEM</span>
+                    <span class="text-[10px] text-gray-500 font-mono tracking-[0.2em] uppercase">Support Link</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+                <a href="/index.html#suite" class="hover:text-white transition-colors">Product Suite</a>
+                <a href="/vision.html" class="hover:text-white transition-colors">Vision</a>
+                <a href="/support.html" class="text-white">Direct Line</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="relative z-10 pt-40 pb-20">
+        <div class="max-w-3xl mx-auto px-6">
+            <h1 class="text-5xl font-bold mb-12 text-center">Direct Line</h1>
+
+            <div class="glass-panel rounded-2xl p-10 mb-12">
+                <h2 class="text-2xl font-bold mb-6 text-white">Submit a Ticket</h2>
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
+                        <input type="email"
+                            class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition"
+                            placeholder="you@company.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Subject</label>
+                        <select
+                            class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition">
+                            <option>Technical Support</option>
+                            <option>Partnership Inquiry</option>
+                            <option>Billing Question</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                        <textarea rows="4"
+                            class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition"
+                            placeholder="Describe your issue..."></textarea>
+                    </div>
+                    <button type="button"
+                        class="w-full bg-white text-black font-bold py-3 rounded-lg hover:bg-gray-200 transition">
+                        Initialize Transmission
+                    </button>
+                </form>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-panel rounded-xl p-6 text-center">
+                    <div class="text-green-400 font-mono mb-2">ALL SYSTEMS OPERATIONAL</div>
+                    <div class="text-xs text-gray-500">Live Status Check</div>
+                </div>
+                <div class="glass-panel rounded-xl p-6 text-center">
+                    <div class="text-white font-mono mb-2">contact@xpecosystem.com</div>
+                    <div class="text-xs text-gray-500">Email Direct</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer
+        class="relative z-10 bg-black pt-20 pb-10 border-t border-white/5 text-center text-gray-600 text-xs font-mono">
+        &copy; 2026 XP Ecosystem LLC. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
