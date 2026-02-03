@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XP Ecosystem - Architects of the Digital Future</title>
+    <link rel="icon" type="image/jpeg"
+        href="https://ljagblklgeonytqfmuzh.supabase.co/storage/v1/object/public/xp/WhatsApp%20Image%202026-01-31%20at%2022.58.02.jpeg">
     <meta name="description" content="XP Ecosystem LLC is a digital-first powerhouse building scalable SaaS solutions.">
     <link href="./dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -204,6 +206,7 @@
             if (isMenuOpen) {
                 // Open Menu
                 mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+                mobileMenu.classList.add('opacity-100');
 
                 // Animate hamburger to X
                 const spans = menuBtn.querySelectorAll('span');
@@ -221,6 +224,7 @@
             } else {
                 // Close Menu
                 mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+                mobileMenu.classList.remove('opacity-100');
 
                 // Reset hamburger
                 const spans = menuBtn.querySelectorAll('span');
@@ -238,7 +242,12 @@
             }
         }
 
-        menuBtn.addEventListener('click', toggleMenu);
+        if (menuBtn) {
+            menuBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                toggleMenu();
+            });
+        }
     </script>
 
     <!-- Hero Section (Centered) -->
@@ -269,8 +278,28 @@
 
     <!-- Product Suite (Cards) -->
     <section id="suite" class="relative z-10 py-20 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="max-w-7xl mx-auto relative">
+            <!-- Global Privacy / Teaser Mask -->
+            <div
+                class="absolute inset-0 z-20 backdrop-blur-xl bg-black/60 rounded-3xl flex flex-col items-center justify-center text-center p-8 border border-white/10">
+                <div class="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-6 animate-pulse">
+                    <svg class="w-8 h-8 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 00-2 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white mb-4">Exploration Restricted</h2>
+                <p class="text-gray-400 max-w-md mb-8">
+                    We're currently polishing the final details of the ecosystem. Project catalogs and live demos are
+                    masked to protect intellectual property before the official launch.
+                </p>
+                <a href="/support.html"
+                    class="px-6 py-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-sm transition-all">
+                    Request Early Access
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 filter grayscale blur-[1px] opacity-40">
 
                 <!-- EduXP Card -->
                 <div class="product-card rounded-3xl p-8 flex flex-col h-full relative group">
