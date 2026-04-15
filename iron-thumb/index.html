@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Iron Thumb by XP Ecosystem is on the way. Explore the coming soon landing page and privacy information.">
+    <meta name="keywords" content="Iron Thumb, XP Ecosystem, coming soon, app landing page">
+    <meta name="author" content="XP Ecosystem LLC">
+
+    <meta property="og:title" content="Iron Thumb | Coming Soon">
+    <meta property="og:description"
+        content="A new XP Ecosystem app is coming soon. Get the first look at Iron Thumb.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xpecosystem.com/iron-thumb">
+    <meta property="og:site_name" content="XP Ecosystem">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Iron Thumb | Coming Soon">
+    <meta name="twitter:description" content="A new XP Ecosystem app is coming soon.">
+
+    <title>Iron Thumb | Coming Soon | XP Ecosystem</title>
+    <link rel="canonical" href="https://xpecosystem.com/iron-thumb">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #090909;
+            color: #e5e5e5;
+            overflow-x: hidden;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .bg-animated {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 28%),
+                radial-gradient(circle at 80% 30%, rgba(148, 163, 184, 0.14) 0%, transparent 30%),
+                radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 35%);
+            animation: backgroundShift 16s ease-in-out infinite;
+        }
+
+        @keyframes backgroundShift {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.82;
+                transform: scale(1.04);
+            }
+        }
+
+        .glass {
+            background: rgba(18, 18, 18, 0.52);
+            backdrop-filter: blur(22px) saturate(180%);
+            -webkit-backdrop-filter: blur(22px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-strong {
+            background: rgba(10, 10, 10, 0.66);
+            backdrop-filter: blur(28px) saturate(180%);
+            -webkit-backdrop-filter: blur(28px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glow {
+            box-shadow:
+                0 0 30px rgba(255, 255, 255, 0.05),
+                0 0 80px rgba(255, 255, 255, 0.03),
+                inset 0 0 24px rgba(255, 255, 255, 0.02);
+        }
+
+        .shimmer {
+            background: linear-gradient(90deg, #d4d4d4 0%, #ffffff 50%, #d4d4d4 100%);
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 200% 0;
+            }
+
+            100% {
+                background-position: -200% 0;
+            }
+        }
+
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .btn-liquid {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .btn-liquid::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.12);
+            transform: translate(-50%, -50%);
+            transition: width 0.5s ease, height 0.5s ease;
+        }
+
+        .btn-liquid:hover::before {
+            width: 280px;
+            height: 280px;
+        }
+
+        .btn-liquid span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .thumb-shell {
+            position: relative;
+            width: 220px;
+            height: 220px;
+            margin: 0 auto;
+            border-radius: 36px;
+        }
+
+        .thumb-shell::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: 36px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent 60%);
+            opacity: 0.7;
+            pointer-events: none;
+        }
+
+        .thumb-icon {
+            width: 92px;
+            height: 92px;
+            color: rgba(255, 255, 255, 0.92);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-animated"></div>
+
+    <header class="relative z-10 glass-strong border-b border-white/5">
+        <div class="container mx-auto px-6 py-5 flex items-center justify-between">
+            <a href="/" class="flex items-center space-x-4">
+                <div class="w-12 h-12 glass rounded-xl flex items-center justify-center glow">
+                    <img src="/assets/logos/xp-ecosystem-logo.png" alt="XP Ecosystem" class="w-10 h-10 object-contain"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <span class="text-xl font-light text-white" style="display: none;">XP</span>
+                </div>
+                <span class="text-2xl font-light tracking-wide text-white">XP Ecosystem</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-light tracking-wide">
+                <a href="/" class="text-white/60 hover:text-white/90 transition">Home</a>
+                <a href="/iron-thumb" class="text-white/90 transition">Iron Thumb</a>
+                <a href="/iron-thumb/privacy" class="text-white/60 hover:text-white/90 transition">Privacy</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 min-h-[calc(100vh-81px)] flex items-center">
+        <section class="container mx-auto px-6 py-20">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div
+                        class="inline-flex items-center rounded-full glass px-4 py-2 text-xs uppercase tracking-[0.25em] text-white/70 mb-8">
+                        Coming Soon
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-extralight tracking-tight text-white/95 mb-6">
+                        Iron <span class="shimmer">Thumb</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-white/65 font-light leading-relaxed max-w-2xl mb-10">
+                        A new XP Ecosystem experience is on the way. Iron Thumb is being shaped now and this page is
+                        the first marker before launch.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/iron-thumb/privacy"
+                            class="btn-liquid glass px-7 py-4 rounded-full text-sm font-light tracking-wide text-white/90 hover:text-white glow">
+                            <span>View Privacy Policy</span>
+                        </a>
+                        <a href="/"
+                            class="btn-liquid glass-strong px-7 py-4 rounded-full text-sm font-light tracking-wide text-white/75 hover:text-white/95">
+                            <span>Back to Home</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex justify-center lg:justify-end">
+                    <div class="thumb-shell glass-strong glow float flex items-center justify-center">
+                        <div class="absolute inset-6 rounded-[28px] border border-white/10"></div>
+                        <div class="absolute top-5 left-5 text-[10px] uppercase tracking-[0.35em] text-white/35">
+                            Launch Signal
+                        </div>
+                        <svg class="thumb-icon relative z-10" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path
+                                d="M9.5 10.5V20H6.5C5.4 20 4.5 19.1 4.5 18V12.5C4.5 11.4 5.4 10.5 6.5 10.5H9.5ZM11 20H15.4C16.2 20 16.9 19.5 17.2 18.8L19.4 13.6C19.5 13.3 19.6 13 19.6 12.7V12C19.6 11.2 18.9 10.5 18.1 10.5H14.2L14.8 7.4C14.8 7.2 14.9 6.9 14.9 6.7C14.9 5.8 14.2 5 13.3 5C12.9 5 12.5 5.2 12.2 5.6L8.8 10.1C8.6 10.3 8.5 10.6 8.5 11V18.5C8.5 19.3 9.2 20 10 20H11Z"
+                                stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="h-px bg-white/10 mb-4"></div>
+                            <p class="text-center text-white/55 text-sm font-light tracking-[0.25em] uppercase">
+                                Thumb Mark Online
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
