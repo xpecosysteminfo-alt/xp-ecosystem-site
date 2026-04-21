@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | XP by XP Ecosystem</title>
     <meta name="description"
-        content="Privacy Policy for XP - Learn how we handle your data, security, and user rights.">
+        content="Privacy Policy for XP - data, AI, Firebase, retention, deletion, and your rights.">
     <link rel="canonical" href="https://xpecosystem.com/xp/privacy">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -72,72 +72,81 @@
                 <h1 class="text-4xl md:text-6xl font-extralight mb-4 tracking-tight">
                     Privacy <span class="shimmer">Policy</span>
                 </h1>
-                <p class="text-white/50 font-light">Last updated: March 2026</p>
+                <p class="text-white/50 font-light">Last updated: April 2026</p>
             </header>
 
             <div class="space-y-12 text-white/70 font-light leading-relaxed">
+
                 <section>
                     <h2 class="text-2xl font-light mb-4 text-white/90 flex items-center">
                         <span
                             class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3 text-sm border border-white/10">01</span>
-                        Data Collection
+                        AI chat data
                     </h2>
-                    <p class="mb-4">XP is designed to enhance your daily journey while respecting your privacy. We
-                        collect the following information:</p>
-                    <ul class="list-disc list-inside space-y-2 ml-4">
-                        <li><strong class="text-white/90">Authentication:</strong> Your email address is collected for
-                            secure authentication via Firebase EU3.</li>
-                        <li><strong class="text-white/90">Habits & Progress:</strong> We track tasks, levels, and XP to
-                            provide a gamified experience.</li>
-
-                    </ul>
+                    <p class="mb-4">Messages you send to XP's "Whisper" chat feature are transmitted to <strong class="text-white/90">Google's Generative Language API (Gemini)</strong> for processing. Google acts as a sub-processor under its <a href="https://ai.google.dev/gemini-api/terms" class="text-white/90 underline hover:text-white" target="_blank" rel="noopener noreferrer">API Terms</a> and does not use this content to train its models.</p>
                 </section>
 
                 <section>
                     <h2 class="text-2xl font-light mb-4 text-white/90 flex items-center">
                         <span
                             class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3 text-sm border border-white/10">02</span>
-                        Third Parties
+                        Storage &amp; sync
                     </h2>
-                    <p class="mb-4">To provide our premium services, we partner with industry leaders in security and
-                        AI:</p>
-                    <ul class="list-disc list-inside space-y-2 ml-4">
-                        <li><strong class="text-white/90">RevenueCat:</strong> Used for safe and secure payment
-                            processing.</li>
-                        <li><strong class="text-white/90">Deepseek / Gemini:</strong> Advanced AI models that provide
-                            intelligent features.</li>
-                    </ul>
+                    <p class="mb-4">Your chat messages, AI responses, tasks, energy logs, and usage counters are also stored in <strong class="text-white/90">Google Firebase Firestore</strong>, scoped to your unique account ID, to let you resume conversations across devices.</p>
+                    <p class="mb-4">Account authentication uses <strong class="text-white/90">Firebase Auth</strong> (email, UID). Payments for premium features may be processed via <strong class="text-white/90">RevenueCat</strong> and platform billing; we do not store full card numbers on our servers.</p>
                 </section>
 
                 <section>
                     <h2 class="text-2xl font-light mb-4 text-white/90 flex items-center">
                         <span
                             class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3 text-sm border border-white/10">03</span>
-                        Security
+                        What we keep, for how long
                     </h2>
-                    <p>All your personal and usage data is <strong class="text-white/90">encrypted</strong> and stored
-                        securely on <strong class="text-white/90">Firebase EU3</strong>. We implement industry-standard
-                        security measures to ensure your information remains private and protected.</p>
+                    <ul class="list-disc list-inside space-y-2 ml-4">
+                        <li><strong class="text-white/90">Account</strong> (email, UID): kept while your account is active</li>
+                        <li><strong class="text-white/90">Chat messages + AI responses:</strong> kept while your account is active</li>
+                        <li><strong class="text-white/90">Anonymous security logs</strong> (auth events, rate-limit breaches): 30 days</li>
+                    </ul>
                 </section>
 
                 <section>
                     <h2 class="text-2xl font-light mb-4 text-white/90 flex items-center">
                         <span
                             class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3 text-sm border border-white/10">04</span>
-                        User Rights
+                        Deletion
                     </h2>
-                    <p>You have full control over your data. You can request the <strong class="text-white/90">deletion
-                            of your data</strong> at any time. Simply reach out to us via our support channel, and we
-                        will process your request promptly.</p>
+                    <p class="mb-4">Tapping <strong class="text-white/90">Wipe memory</strong> in Settings permanently deletes all your chat history, tasks, and progress from both your device <strong class="text-white/90">and our servers</strong> within 24 hours. Tapping <strong class="text-white/90">Delete account</strong> additionally deletes your authentication record.</p>
+                    <p class="mb-4">You can also request deletion without the app at <a href="/xp/delete" class="text-white/90 underline hover:text-white">https://xpecosystem.com/xp/delete</a>.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-light mb-4 text-white/90 flex items-center">
+                        <span
+                            class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3 text-sm border border-white/10">05</span>
+                        Crisis content
+                    </h2>
+                    <p class="mb-4">If your message contains signals of self-harm or suicidal ideation we do <strong class="text-white/90">not</strong> send it to the AI. We instead show a link to international crisis resources (<a href="https://findahelpline.com" class="text-white/90 underline hover:text-white" target="_blank" rel="noopener noreferrer">findahelpline.com</a>). We keep an anonymous counter of these events for safety monitoring; we never store the text of the message.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-light mb-4 text-white/90 flex items-center">
+                        <span
+                            class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3 text-sm border border-white/10">06</span>
+                        Data we do NOT collect
+                    </h2>
+                    <ul class="list-disc list-inside space-y-2 ml-4">
+                        <li>Phone contacts, SMS, microphone, camera, precise location</li>
+                        <li>Health sensor data, biometrics</li>
+                        <li>Any data from users under 13</li>
+                    </ul>
                 </section>
 
                 <section class="bg-white/5 rounded-2xl p-8 border border-white/10">
-                    <h2 class="text-2xl font-light mb-4 text-white/90">Contact Us</h2>
-                    <p class="mb-6">For questions about your data or to exercise your rights, please contact our support
-                        team:</p>
-                    <a href="mailto:contact@xpecosystem.com"
+                    <h2 class="text-2xl font-light mb-4 text-white/90">Contact</h2>
+                    <p class="mb-6">Questions about this policy or your data:</p>
+                    <a href="mailto:sam@xpecosystem.com"
                         class="inline-flex items-center px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl transition duration-300 border border-white/20">
-                        contact@xpecosystem.com
+                        sam@xpecosystem.com
                     </a>
                 </section>
             </div>
